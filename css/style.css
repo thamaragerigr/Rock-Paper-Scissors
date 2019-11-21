@@ -2,28 +2,46 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
+body{
+    background: rgb(31,55,86);
+    background: radial-gradient(circle, rgba(31,55,86,1) 0%, rgba(20,21,57,1) 100%);
+}
 section{
     height: 100vh;
-    background: white;
-    font-family: sans-serif;
+     font-family: sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .score{
-    color: red;
+    
+    width: 300px;
     height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 3px rgb(71, 78, 100) solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+   
 }
 
 .score h2{
-    font-size: 30px;
+    font-size: 20px;
+    color:white;
 }
 
 .score p{
+    border-radius: 10px;
+    background:rgb(235, 235, 235) ;
+    color:rgb(116, 116, 116);
     padding: 10px;
+    font-weight: 700;
     text-align: center;
     font-size: 25px;
 }
@@ -43,15 +61,14 @@ section{
 }
 
 .intro button, .match button{
-    width: 150px;
-    height: 50px;
-    background: none;
+    border-radius: 10px;
+    background:rgb(235, 235, 235) ;
+    color:rgb(116, 116, 116);
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
     border: none;
-    color: red;
-    font-size: 20px;
-    background: green;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
 .match{
@@ -63,9 +80,10 @@ section{
 }
 
 .winner{
-    color: red;
+    color: rgb(243, 243, 243);
     text-align: center;
     font-size: 50px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .hands, .options{

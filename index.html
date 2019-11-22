@@ -10,13 +10,14 @@
     <!--Archivos externos-->
     <link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap" rel="stylesheet">
-   
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="game">
       <div class="score">
-          
         <div class="player-score">
           <h2>PLAYER</h2>
           <p>0</p>
@@ -26,33 +27,48 @@
           <h2>COMPUTER</h2>
           <p>0</p>
         </div>
-
       </div>
 
       <div class="intro">
-          <h1>Piedra, Papel o Tijera</h1>
-          <button>Start</button>
+        <h1>Piedra, Papel o Tijera</h1>
+        <button>Start</button>
       </div>
 
       <div class="match fadeOut">
-          <h2 class="winner">Choose an option</h2>
+        <h2 class="winner">Choose an option</h2>
 
-          <div class="options">
-            <button class="rock">rock</button>
-            <button class="paper">paper</button>
-            <button class="scissors">scissors</button>
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
         </div>
 
-          <div class="hands">
-              <img class="player-hand" src="images/rock.svg" alt="Mano del jugador">
-              <img class="computer-hand" src="images/rock.svg" alt="Mano del ordenador">
-          </div>
-
-          
+        <div class="hands">
+          <img
+            class="player-hand"
+            src="images/rock.svg"
+            alt="Mano del jugador"
+          />
+          <img
+            class="computer-hand"
+            src="images/rock.svg"
+            alt="Mano del ordenador"
+          />
+        </div>
       </div>
     </section>
 
+    <!-- Botón para abrir modal -->
+    <button id="myBtn">Reglas</button>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Contenido de Modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Imagen</p>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

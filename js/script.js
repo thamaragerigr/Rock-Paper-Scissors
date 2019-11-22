@@ -122,3 +122,7 @@ const game = ()=>{
 
 //Aqui comienza la funcción 'game'
 game();
+
+
+
+

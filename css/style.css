@@ -17,7 +17,7 @@ section{
 
 .score{
     
-    width: 300px;
+    width: 600px;
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -38,42 +38,49 @@ section{
 
 .score p{
     border-radius: 10px;
-    background:rgb(235, 235, 235) ;
-    color:rgb(116, 116, 116);
+    color:rgb(255, 255, 255);
     padding: 10px;
     font-weight: 700;
     text-align: center;
+
     font-size: 25px;
+    width: 50px;
 }
 
 .intro{
-    color: red;
+    color: white;
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transition: opacity 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .intro h1{
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 
 .intro button, .match button{
     border-radius: 10px;
     background:rgb(235, 235, 235) ;
-    color:rgb(116, 116, 116);
+    color:rgb(9, 22, 78);
     padding: 10px;
     font-weight: 700;
     text-align: center;
     font-size: 25px;
     border: none;
+    cursor: pointer;
 }
 
 .match{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     transition: opacity 0.5s ease 0.5s;
@@ -90,10 +97,23 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 60px;
 }
 
 .player-hand{
     transform: rotateY(180deg);
+    background: whitesmoke;
+    padding: 30px;
+    border-radius: 100px;
+    border: 20px solid rgb(241, 62, 62);
+    margin: 20px;
+}
+
+.computer-hand{
+    background: whitesmoke;
+    padding: 30px;
+    border-radius: 100px;
+    border: 20px solid rgb(62, 154, 241);
 }
 
 div.fadeOut{

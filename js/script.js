@@ -61,19 +61,19 @@ const game = ()=>{
        const winner = document.querySelector('.winner'); 
        //Si ocurre un empate
       if(playerChoice === computerChoice){
-         winner.textContent = 'IT IS A TIE!';
+         winner.textContent = '¡EMPATE!';
          return;
       }
 
       // Si elige piedra
       if(playerChoice === 'rock'){
           if(computerChoice === 'scissors'){
-              winner.textContent = 'PLAYER WINS!';
+              winner.textContent = '¡HAS GANADO!';
               updateScore();
               pScore++;
               return;
           }else{
-              winner.textContent = 'COMPUTER WINS!';
+              winner.textContent = '¡HAS PERDIDO!';
               cScore++;
               updateScore();
               return;
@@ -84,12 +84,12 @@ const game = ()=>{
       //Si elige papel
       if(playerChoice === 'paper'){
         if(computerChoice === 'scissors'){
-            winner.textContent = 'COMPUTER WINS!';
+            winner.textContent = '¡HAS PERDIDO!';
             cScore++;
             updateScore();
             return;
         }else{
-            winner.textContent = 'PLAYER WINS!';
+            winner.textContent = '¡HAS GANADO!';
             pScore++;
             updateScore();
             return;
@@ -100,12 +100,12 @@ const game = ()=>{
     //Si elige tijera
     if(playerChoice === 'scissors'){
         if(computerChoice === 'rock'){
-            winner.textContent = 'COMPUTER WINS!';
+            winner.textContent = '¡HAS PERDIDO!';
             cScore++;
             updateScore();
             return;
         }else{
-            winner.textContent = 'PLAYER WINS!';
+            winner.textContent = '¡HAS GANADO!';
             pScore++;
             updateScore();
             return;

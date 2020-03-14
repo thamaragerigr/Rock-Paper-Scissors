@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   </head>
   <body>
     <section class="game">
@@ -31,7 +32,7 @@
 
       <div class="intro">
         <h1>¡PIEDRA, PAPEL O TIJERA!</h1>
-        <button>Comenzar</button>
+        <button class="button">Comenzar</button>
       </div>
 
       <div class="match fadeOut">
@@ -56,10 +57,14 @@
           />
         </div>
       </div>
+
+
+       <!-- Botón para abrir modal -->
+    <button id="myBtn">Instrucciones</button>
+    
     </section>
 
-    <!-- Botón para abrir modal -->
-    <button id="myBtn">Instrucciones</button>
+   
 
     <!-- Modal -->
     <div id="myModal" class="modal">

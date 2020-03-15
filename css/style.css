@@ -36,17 +36,18 @@ body {
 .wrapper section {
   border: #252434 solid 1rem;
   width: 80%;
-  max-width: 600px;
   height: 80vh;
+  max-width: 600px;
+  max-height: 600px;
   margin-top: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .score {
-  width: 600px;
-  height: 20vh;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +115,11 @@ body {
 }
 
 .match {
+  margin-top: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.5s ease 0.5s;
@@ -205,6 +208,9 @@ div.fadeIn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bottom .credits {
@@ -215,6 +221,7 @@ div.fadeIn {
 }
 
 .bottom .credits a {
+  color: #69259d;
   padding-left: .45rem;
 }
 

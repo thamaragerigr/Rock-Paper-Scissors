@@ -26,16 +26,17 @@ body {
     section {
         border: #252434 solid 1rem;
         width: 80%;
-        max-width: 600px;
         height: 80vh;
+        max-width: 600px;
+        max-height: 600px;
         margin-top: 2rem;
         align-items: center;
+        position: relative;
     }
 }
 
 .score {
-	width: 600px;
-	height: 20vh;
+	height: 100px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -88,11 +89,13 @@ body {
 		&:hover {
 			opacity: .7;
 		}
-	}
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+    }
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 	transition: opacity 0.5s ease 0.5s;
 }
 button {
@@ -153,12 +156,14 @@ div.fadeIn {
 .bottom{
  display: flex;
  align-items: center;
+ justify-content: center ;
     .credits {
         color: white;
         font-size: 10px;
         bottom: 1rem;
         text-align: center;
         a {
+            color: rgb(105, 37, 157);
             padding-left: .45rem;
         }
     }

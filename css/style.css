@@ -39,7 +39,7 @@ body {
   height: 80vh;
   max-width: 600px;
   max-height: 600px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -271,7 +271,6 @@ div.fadeIn {
 .bottom #myBtn {
   font-family: Poppins;
   padding: 10px;
-  margin: 20px;
   color: white;
   background: none;
   border: none;

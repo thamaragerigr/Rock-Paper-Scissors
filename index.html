@@ -16,6 +16,7 @@
     />
   </head>
   <body>
+    <div class="wrapper">
     <section class="game">
       <div class="intro">
         <h1>rock, <br> paper, <br> scissors</h1>
@@ -35,7 +36,7 @@
           </div>
         </div>
   
-        <h2 class="winner">Elige una opción</h2>
+        <h2 class="winner">choose an option</h2>
 
         <div class="options">
           <button class="rock">rock</button>
@@ -47,32 +48,33 @@
           
           <img
             class="player-hand"
-            src="images/rock.svg"
+            src="images/rock.png"
             alt="Mano del jugador"
           />
           <img
             class="computer-hand"
-            src="images/rock.svg"
+            src="images/rock.png"
             alt="Mano del ordenador"
           />
         </div>
       </div>
     </section>
-    <!-- Botón para abrir modal -->
-    <button id="myBtn">Instrucciones</button>
+  </div>
+  
+  <div class="bottom">
+     <button id="myBtn">Instructions</button>
 
     <div class="credits">
       <p>Made with ❤️ by <a href="https://github.com/thamaragerigr"> Thamara Gerig</a></p>
     </div>
-    <!-- Modal -->
     <div id="myModal" class="modal">
-      <!-- Contenido de Modal -->
       <div class="modal-content">
         <span class="close">&times;</span>
         <img src="images/image-rules.svg" alt="">
       </div>
     </div>
-
+  </div>
+  
     <script src="js/script.js"></script>
   </body>
 </html>

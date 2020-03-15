@@ -37,8 +37,8 @@ const game = ()=>{
                 setTimeout(() => {
                     compareHands(this.textContent, computerChoice);
                     //Combio de imagenes
-                    playerHand.src = `./images/${this.textContent}.svg`;
-                    computerHand.src = `./images/${computerChoice}.svg`;
+                    playerHand.src = `./images/${this.textContent}.png`;
+                    computerHand.src = `./images/${computerChoice}.png`;
     
                 }, 2000);
 

@@ -14,28 +14,27 @@
       href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   </head>
   <body>
     <section class="game">
-      <div class="score">
-        <div class="player-score">
-          <h2>JUGADOR</h2>
-          <p>0</p>
-        </div>
-
-        <div class="computer-score">
-          <h2>ORDENADOR</h2>
-          <p>0</p>
-        </div>
-      </div>
-
       <div class="intro">
-        <h1>¡PIEDRA, PAPEL O TIJERA!</h1>
-        <button class="button">Comenzar</button>
+        <h1>rock, <br> paper, <br> scissors</h1>
+        <button>Let's Play</button>
       </div>
 
       <div class="match fadeOut">
+        <div class="score">
+          <div class="player-score">
+            <h2>Player</h2>
+            <p>0</p>
+          </div>
+  
+          <div class="computer-score">
+            <h2>Computer</h2>
+            <p>0</p>
+          </div>
+        </div>
+  
         <h2 class="winner">Elige una opción</h2>
 
         <div class="options">
@@ -45,6 +44,7 @@
         </div>
 
         <div class="hands">
+          
           <img
             class="player-hand"
             src="images/rock.svg"
@@ -57,15 +57,13 @@
           />
         </div>
       </div>
-
-
-       <!-- Botón para abrir modal -->
-    <button id="myBtn">Instrucciones</button>
-    
     </section>
+    <!-- Botón para abrir modal -->
+    <button id="myBtn">Instrucciones</button>
 
-   
-
+    <div class="credits">
+      <p>Made with ❤️ by <a href="https://github.com/thamaragerigr"> Thamara Gerig</a></p>
+    </div>
     <!-- Modal -->
     <div id="myModal" class="modal">
       <!-- Contenido de Modal -->
